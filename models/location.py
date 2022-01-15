@@ -4,5 +4,5 @@ from pydantic import BaseModel
 
 class Location(BaseModel):
     city: str
-    state: Optional[str] = None,
-    country: str = 'Canada'
+    state: Optional[str] = None
+    country: str = 'CA'

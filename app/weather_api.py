@@ -2,13 +2,17 @@ from optparse import Option
 import fastapi 
 from fastapi import Depends
 from typing import Optional
-from pydantic import BaseModel
 from models.location import Location
 
+from services.openweather_service import get_report
 
 router = fastapi.APIRouter()
 
 
 @router.get('/api/weather/{city}')
-def weather(loc: Location = Depends(), units: Optional[str] = 'metric'):
-    return f'{loc.city}, {loc.state}, {loc.country} in {units}'
+async def weather(loc: Location = Depends(), units: Optional[str] = 'metric'):
+    report = await get_report(city = loc.city,
+                        state = loc.state,
+                        country= loc.country,
+                        units= units)
+    return report
