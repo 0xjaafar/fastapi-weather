@@ -40,6 +40,6 @@ MIT
 
 ---
 
-> GitHub [@amitmerchant1990](https://github.com/pycodemaker &nbsp;&middot;&nbsp;
+> GitHub [@pycodemaker](https://github.com/pycodemaker &nbsp;&middot;&nbsp;
 > Twitter [@pycodemaker](https://twitter.com/pycodemaker)
 
