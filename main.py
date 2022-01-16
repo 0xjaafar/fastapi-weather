@@ -7,6 +7,8 @@ from app import weather_api
 from fastapi.staticfiles import StaticFiles
 from services   import openweather_service
 from pathlib import Path
+
+
 api = fastapi.FastAPI()
 
 
